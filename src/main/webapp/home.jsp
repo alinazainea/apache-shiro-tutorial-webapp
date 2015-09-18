@@ -76,8 +76,8 @@
     <h2>Permissions</h2>
 
     <ul>
-        <li>You may <shiro:lacksPermission name="lightsaber:*"><b>NOT</b> </shiro:lacksPermission> command the <code>lightsaber:*</code> Starship!</li>
-        <li>You may <shiro:lacksPermission name="winnebago:drive:eagle5"><b>NOT</b> </shiro:lacksPermission> winnebago:drive:eagle5!</li>
+        <li>You <shiro:lacksPermission name="lightsaber:*"><b>DO NOT</b> </shiro:lacksPermission> HAVE the <code>lightsaber:*</code> Permission!</li>
+        <li>You <shiro:lacksPermission name="winnebago:drive:eagle5"><b>DO NOT</b> </shiro:lacksPermission> HAVE the <code>winnebago:drive:eagle5</code> Permission!</li>
     </ul>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
