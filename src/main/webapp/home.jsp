@@ -60,24 +60,24 @@
     <h3>Roles you have:</h3>
 
     <p>
-        <shiro:hasRole name="Captains">Captains<br/></shiro:hasRole>
-        <shiro:hasRole name="Officers">Bad Guys<br/></shiro:hasRole>
-        <shiro:hasRole name="Enlisted">Enlisted<br/></shiro:hasRole>
+        <shiro:hasRole name="admin">admin<br/></shiro:hasRole>
+        <shiro:hasRole name="schwartz">schwartz<br/></shiro:hasRole>
+        <shiro:hasRole name="goodguy">goodguy<br/></shiro:hasRole>
     </p>
 
     <h3>Roles you DON'T have:</h3>
 
     <p>
-        <shiro:lacksRole name="Captains">Captains<br/></shiro:lacksRole>
-        <shiro:lacksRole name="Officers">Officers<br/></shiro:lacksRole>
-        <shiro:lacksRole name="Enlisted">Enlisted<br/></shiro:lacksRole>
+        <shiro:lacksRole name="admin">admin<br/></shiro:lacksRole>
+        <shiro:lacksRole name="schwartz">schwartz<br/></shiro:lacksRole>
+        <shiro:lacksRole name="goodguy">goodguy<br/></shiro:lacksRole>
     </p>
 
     <h2>Permissions</h2>
 
     <ul>
-        <li>You may <shiro:lacksPermission name="ship:NCC-1701-D:command"><b>NOT</b> </shiro:lacksPermission> command the <code>NCC-1701-D</code> Starship!</li>
-        <li>You may <shiro:lacksPermission name="user:${account.username}:edit"><b>NOT</b> </shiro:lacksPermission> edit the ${account.username} user!</li>
+        <li>You may <shiro:lacksPermission name="lightsaber:*"><b>NOT</b> </shiro:lacksPermission> command the <code>lightsaber:*</code> Starship!</li>
+        <li>You may <shiro:lacksPermission name="winnebago:drive:eagle5"><b>NOT</b> </shiro:lacksPermission> winnebago:drive:eagle5!</li>
     </ul>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
